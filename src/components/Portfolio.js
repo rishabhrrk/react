@@ -33,13 +33,37 @@ export default class Porfolio extends Component {
             >
               {portfolioItem.name}
             </h2>
-            <p>{portfolioItem.description}</p>
-
+            <p style={{
+              textAlign:"justify",
+            }}>{portfolioItem.description}</p>
+            <ul
+              style={{
+                display: "flex",
+                flexWrap:"wrap",
+                flexDirection: "flex-row",
+                textAlign:"center",
+              }}
+            >
+              {portfolioItem.technologies.map((tech, i) => {
+                return (
+                  <li
+                    key={i}
+                    style={{
+                      flex: "1 0 30%",
+                      padding: "2%",
+                      fontSize: "1.35rem",
+                    }}
+                  >
+                    <p>#{tech}</p>
+                  </li>
+                );
+              })}
+            </ul>
             <a
               style={{
                 position: "absolute",
                 bottom: "0%",
-                left:"0%",
+                left: "0%",
                 padding: "1rem",
               }}
               href={portfolioItem.url}
@@ -51,7 +75,7 @@ export default class Porfolio extends Component {
               style={{
                 position: "absolute",
                 bottom: "0%",
-                right:"0%",
+                right: "0%",
                 padding: "1rem",
               }}
               href={portfolioItem.youtube}

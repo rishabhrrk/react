@@ -25,6 +25,8 @@ let resumeData = {
     "aboutme":"I am currently a master's student at University of Florida majoring in Computer Sciences. I am a self taught programmer, currently diving deeper into Full-Stack development. If I were to describe my self in a sentence I would say - “I take responsibility for my craft and believe in my abilities to build a great product”.",
     "address":"Gainesville, Florida, US",
     "website":"https://rishabhrrk.github.io/react/",
+    "email":"rishabhrrk@gmail.com",
+    "mobile":"+1 352 281 9920",
     "education":[
       {
         "UniversityName":"University of Florida",
